@@ -1,7 +1,11 @@
 <!DOCTYPE html>>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
 <html>
     <canvas id='canvas'></canvas>
-<span id='info'>Click and drag to draw!<span>
+<span id='info'>눌러서 그리시오!<span>
 
 <!-- 
   Drawing with text:
@@ -23,8 +27,7 @@ var position = {x: 0, y: window.innerHeight/2};
 var counter = 0;
 var minFontSize = 3;
 var angleDistortion = 0;
-var letters = "There was a table set out under a tree in front of the house, and the March Hare and the Hatter were having tea at it: a Dormouse was sitting between them, fast asleep, and the other two were using it as a cushion, resting their elbows on it, and talking over its head. 'Very uncomfortable for the Dormouse,' thought Alice; 'only, as it's asleep, I suppose it doesn't mind.'";
-
+var letters = "여기에 보이는 건 껍데기에 지나지 않아 가장 중요한 것은 눈에 보이지 않아 눈을 감고 자신의 마음에 귀를 기울여 보세요 그 곳에 진정한 보물들이 있어요 이 보물을 볼줄 아는 눈을 가졌을 때 세상은 아름다워 보입니다 너의 장미꽃이 그토록 소중한 것은 그 꽃을 위해 네가 공들인 그 시간 때문이야 우리는 어떠한 목표를 두고 소중한 시간을 들입니다 그 목표가 성공으로 끝이나든 실패로 끝이나든 결과는 중요하지 않아요 이미 자신의 삶 속에 아름다운 노력과 지나온 시간들이 빛이 되어 반짝이고 있을거예요 어떤 별에 사는 꽃을 좋아한다면 밤에 하늘을 쳐다보는 게 즐거울 거야 어느 별이나 다 꽃이 필테니까 내가 원하고 추구하는 행복들이 지금 당장 눈앞에 보이진 않아요 하지만 어딘가에 있을거라는 희망과 함께 저 멀리 묻어두었더니 모든 것들이 반짝반짝 아름다워 보이기 시작했어요 다른 사람에게는 결코 열어주지 않는 문을 당신에게만 열어주는 사람이 있다면 그 사람이야말로 당신의 진정한 친구이다 인간과 인간 관계에서 서로의 마음이 통했을 때 진정한 친구라고 할 수 있지요 저에겐 진정한 친구가 딱 1명 있습니다 그래서 너무 감사하고 행복합니다 사막이 아름다운 것은 그것이 어딘가에 우물을 감추고 있기 때문이야 눈에 보이진 않지만 우리들의 삶 속 어딘가엔 사막의 우물과 같은 보물이 숨겨져 있습니다 그것을 느낄 줄 아는 사람만이 아름다운 삶을 살아갈 수 있습니다 내가 좋아하는 사람이 나를 좋아해 주는 건 기적이야  내가 누군가를 좋아하고 누군가가 나를 좋아해준다면 이것보다 큰 기적은 없다고 생각합니다 기적의 빛 어쩌면 제 삶에도 이미 존재했는지도 모르겠네요 세상에서 가장 어려운 일은 사람이 사람의마음을 얻는 일이란다 누군가의 마음을 얻는 일 그것을 이루기 전에 먼저 자신의 마음을 볼 줄 알아야겠지요 누가 수천 수백만 개의 별들 중에서 하나밖에 없는 어떤 꽃을 사랑하고 있는 사람이 있다면 그 사람은 그 별들을 바라보는 것만으로도 행복할 거야 세상은 넓고 여러가지 색깔의 빛들이 찬란합니다 하지만 그중에서 자신만이 알고 자신만이 느낄 수 있는 나만의 빛이 있습니다 우리는 그것을 사랑해야합니다 나만의 빛.. 그것은 그 어떠한 빛보다도 찬란하고 아름답습니다 네가 오후 네시에 온다면 나는 세시부터 행복해질 거야 시간이 가면 갈수록 그만큼 나는 더 행복해질 거야 누군가를 기다리고 누군가를 기대하는 시간은 혼자있어도 외롭지 않고 행복합니다 조금만 더 기다리세요 가까워지면 질수록 우리는 더 행복해질 겁니다 밤하늘의 별이 된 어린왕자 이제 가 봐 내려가고 싶어  나무가 쓰러지듯 그냥 천천히 쓰러졌다 모래 때문에 쓰러지는 소리조차 들리지 않았다 그와 가까워질 날만을 기다리고 또 기다립니다"
 // Drawing variables
 var canvas;
 var context;
@@ -64,7 +67,7 @@ function draw() {
     if (d > stepSize) {
       var angle = Math.atan2(mouse.y-position.y, mouse.x-position.x);
       
-      context.font = fontSize + "px Georgia";
+      context.font = fontSize + "px Nanum Pen Script";
     
       context.save();
       context.translate( position.x, position.y);
@@ -116,7 +119,7 @@ function doubleClick( event ) {
 }
 
 function textWidth( string, size ) {
-  context.font = size + "px Georgia";
+  context.font = size + "px Nanum Pen Script";
   
   if ( context.fillText ) {
     return context.measureText( string ).width;
@@ -150,13 +153,13 @@ canvas {
 }
 
 span {
-    font-family: 'Georgia', cursive;
+    font-family: 'Nanum Pen Script', cursive;
   font-size: 40px;
  position: fixed; 
   top: 50%;
   left: 50%;
   color: #000;
   margin-top: -40px;
-  margin-left: -200px;
+  margin-left: -160px;
 }
 </style>
