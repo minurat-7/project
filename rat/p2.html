@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <div id="wrap">
-        <p>move the cursor around the screen</p>
       </div>
 </html>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -20,19 +19,33 @@ $(document).ready(function(){
     mousePos.y = e.pageY;
   });
   
+  $(window).mousedown(function(e) {
+    range = 100;
+    min_size = 30;
+    max_size = 90;
+  })
+
+  $(window).mouseup(function(e) {
+    range = 30;
+    min_size = 10;
+    max_size = 30;
+  })
+
   $(window).mouseleave(function(e) {
     mousePos.x = -1;
     mousePos.y = -1;
   });
+
+  var range = 30;
+  var min_size = 10;
+  var max_size = 30
   
   var draw = setInterval(function(){
     if(mousePos.x > 0 && mousePos.y > 0){
-      
-      var range = 15;
-      
+            
       var color = "background: rgb("+getRandomInt(0,255)+","+getRandomInt(0,255)+","+getRandomInt(0,255)+");";
       
-      var sizeInt = getRandomInt(10, 30);
+      var sizeInt = getRandomInt(min_size, max_size);
       size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
       
       var left = "left: " + getRandomInt(mousePos.x-range-sizeInt, mousePos.x+range) + "px;";
