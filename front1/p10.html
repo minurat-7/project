@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <button onClick="window.location.reload()">새로고침</button>
+  <button id="btn" onClick="window.location.reload()">색 바꾸기</button>
   <canvas id="scene"></canvas>
   <input id="copy" type="text" value="Hello World!" />
   <p>입자모양을 흐트러 놓을려면 아무 곳이나 클릭하세요</p>
@@ -46,6 +46,11 @@
     width: 100%;
     text-align: center;
     margin: 0;
+  }
+  #btn {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 </style>
 <script>
