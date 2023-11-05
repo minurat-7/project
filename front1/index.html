@@ -1,153 +1,177 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  </head>
 
-<body>
-  <div style="display: flex;">
-    <a data-url="./p1.html">
-      <div class='item'>
-        <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-          <defs>
-            <clipPath id='clip-0'>
-              <circle cx='0' cy='0' fill='#000' r='150px'></circle>
-            </clipPath>
-          </defs>
-          <text class='svg-text' dy='.3em' x='50%' y='50%'>
-            30000px
-          </text>
-          <g clip-path='url(#clip-0)'>
-            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='./30000.png'></image>
-            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
-              30000px
-            </text>
-          </g>
-        </svg>
-      </div>
-    </a>
-    <a data-url="./p2.html">
-      <div class='item'>
-        <svg preserveAspectRatio='xMidYMid meet' viewBox='0 0 300 200'>
-          <defs>
-            <clipPath id='clip-1'>
-              <circle cx='0' cy='0' fill='#000' r='150px'></circle>
-            </clipPath>
-          </defs>
-          <text class='svg-text' dy='.3em' x='50%' y='50%'>
-            particle
-          </text>
-          <g clip-path='url(#clip-1)'>
-            <image height='100%' preserveAspectRatio='xMinYMin meet' width='100%' xlink:href='./ppap.png'></image>
-            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
-              particle
-            </text>
-          </g>
-        </svg>
-      </div>
-    </a>
-    <a data-url="./p5.html">
-      <div class='item'>
-        <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-          <defs>
-            <clipPath id='clip-2'>
-              <circle cx='0' cy='0' fill='#000' r='150px'></circle>
-            </clipPath>
-          </defs>
-          <text class='svg-text' dy='.3em' x='50%' y='50%'>
-            story
-          </text>
-          <g clip-path='url(#clip-2)'>
-            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='./word.png'></image>
-            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
-              story
-            </text>
-          </g>
-        </svg>
-      </div>
-    </a>
-    <a data-url="./p7.html">
-      <div class='item'>
-        <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-          <defs>
-            <clipPath id='clip-3'>
-              <circle cx='0' cy='0' fill='#000' r='150px'></circle>
-            </clipPath>
-          </defs>
-          <text class='svg-text' dy='.3em' x='50%' y='50%'>
-            logo
-          </text>
-          <g clip-path='url(#clip-3)'>
-            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%'
-              xlink:href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-angus.png'></image>
-            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
-              logo
-            </text>
-          </g>
-        </svg>
-      </div>
-    </a>
-    <a data-url="./p8.html">
-      <div class='item'>
-        <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-          <defs>
-            <clipPath id='clip-4'>
-              <circle cx='0' cy='0' fill='#000' r='150px'></circle>
-            </clipPath>
-          </defs>
-          <text class='svg-text' dy='.3em' x='50%' y='50%'>
-            cloth
-          </text>
-          <g clip-path='url(#clip-4)'>
-            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='./cloth.png'></image>
-            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
-              cloth
-            </text>
-          </g>
-        </svg>
-      </div>
-    </a>
-    <a data-url="./p10.html">
-      <div class='item'>
-        <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-          <defs>
-            <clipPath id='clip-5'>
-              <circle cx='0' cy='0' fill='#000' r='150px'></circle>
-            </clipPath>
-          </defs>
-          <text class='svg-text' dy='.3em' x='50%' y='50%'>
-            word
-          </text>
-          <g clip-path='url(#clip-5)'>
-            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='./word2.png'></image>
-            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
-              word
-            </text>
-          </g>
-        </svg>
-      </div>
-    </a>
-  </div>
-  <iframe id="iframe" style="width: 100%; height: 900px; background-color: #ffffff;" src="./p1.html"></iframe>
-  <div class='options'>
-    <button class='dark'></button>
-    <button class='light'></button>
-  </div>
-</body>
-
+  <body>
+    <div style="display: flex">
+      <a data-url="./p1.html">
+        <div class="item">
+          <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+            <defs>
+              <clipPath id="clip-0">
+                <circle cx="0" cy="0" fill="#000" r="150px"></circle>
+              </clipPath>
+            </defs>
+            <text class="svg-text" dy=".3em" x="50%" y="50%">30000px</text>
+            <g clip-path="url(#clip-0)">
+              <image
+                height="100%"
+                preserveAspectRatio="xMinYMin slice"
+                width="100%"
+                xlink:href="./30000.png"
+              ></image>
+              <text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+                30000px
+              </text>
+            </g>
+          </svg>
+        </div>
+      </a>
+      <a data-url="./p2.html">
+        <div class="item">
+          <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 300 200">
+            <defs>
+              <clipPath id="clip-1">
+                <circle cx="0" cy="0" fill="#000" r="150px"></circle>
+              </clipPath>
+            </defs>
+            <text class="svg-text" dy=".3em" x="50%" y="50%">particle</text>
+            <g clip-path="url(#clip-1)">
+              <image
+                height="100%"
+                preserveAspectRatio="xMinYMin meet"
+                width="100%"
+                xlink:href="./ppap.png"
+              ></image>
+              <text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+                particle
+              </text>
+            </g>
+          </svg>
+        </div>
+      </a>
+      <a data-url="./p5.html">
+        <div class="item">
+          <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+            <defs>
+              <clipPath id="clip-2">
+                <circle cx="0" cy="0" fill="#000" r="150px"></circle>
+              </clipPath>
+            </defs>
+            <text class="svg-text" dy=".3em" x="50%" y="50%">story</text>
+            <g clip-path="url(#clip-2)">
+              <image
+                height="100%"
+                preserveAspectRatio="xMinYMin slice"
+                width="100%"
+                xlink:href="./word.png"
+              ></image>
+              <text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+                story
+              </text>
+            </g>
+          </svg>
+        </div>
+      </a>
+      <a data-url="./p7.html">
+        <div class="item">
+          <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+            <defs>
+              <clipPath id="clip-3">
+                <circle cx="0" cy="0" fill="#000" r="150px"></circle>
+              </clipPath>
+            </defs>
+            <text class="svg-text" dy=".3em" x="50%" y="50%">logo</text>
+            <g clip-path="url(#clip-3)">
+              <image
+                height="100%"
+                preserveAspectRatio="xMinYMin slice"
+                width="100%"
+                xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-angus.png"
+              ></image>
+              <text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+                logo
+              </text>
+            </g>
+          </svg>
+        </div>
+      </a>
+      <a data-url="./p8.html">
+        <div class="item">
+          <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+            <defs>
+              <clipPath id="clip-4">
+                <circle cx="0" cy="0" fill="#000" r="150px"></circle>
+              </clipPath>
+            </defs>
+            <text class="svg-text" dy=".3em" x="50%" y="50%">cloth</text>
+            <g clip-path="url(#clip-4)">
+              <image
+                height="100%"
+                preserveAspectRatio="xMinYMin slice"
+                width="100%"
+                xlink:href="./cloth.png"
+              ></image>
+              <text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+                cloth
+              </text>
+            </g>
+          </svg>
+        </div>
+      </a>
+      <a data-url="./p10.html">
+        <div class="item">
+          <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+            <defs>
+              <clipPath id="clip-5">
+                <circle cx="0" cy="0" fill="#000" r="150px"></circle>
+              </clipPath>
+            </defs>
+            <text class="svg-text" dy=".3em" x="50%" y="50%">word</text>
+            <g clip-path="url(#clip-5)">
+              <image
+                height="100%"
+                preserveAspectRatio="xMinYMin slice"
+                width="100%"
+                xlink:href="./word2.png"
+              ></image>
+              <text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+                word
+              </text>
+            </g>
+          </svg>
+        </div>
+      </a>
+    </div>
+    <iframe
+      id="iframe"
+      style="width: 100%; height: 900px; background-color: #ffffff"
+      src="./p1.html"
+    ></iframe>
+    <div class="options">
+      <button class="dark"></button>
+      <button class="light"></button>
+    </div>
+  </body>
 </html>
-<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script>
   $(document).ready(function (e) {
-    $('a').click(function () {
-      $('#iframe').attr('src', $(this).attr('data-url'));
-    })
+    $("a").click(function () {
+      $("#iframe").attr("src", $(this).attr("data-url"));
+    });
   });
 
   function changeColor(e) {
     document.body.className = e.currentTarget.className;
   }
 
-  [].slice.call(document.querySelectorAll('button'), 0).forEach(function (button) {
-    button.addEventListener('click', changeColor);
-  });
+  [].slice
+    .call(document.querySelectorAll("button"), 0)
+    .forEach(function (button) {
+      button.addEventListener("click", changeColor);
+    });
 </script>
 
 <style>
@@ -259,7 +283,8 @@
     cursor: pointer;
     background-color: #3b3e46;
     border-radius: 2px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.02), inset 0 0px 0px 1px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.02),
+      inset 0 0px 0px 1px rgba(0, 0, 0, 0.07);
     transform: translateZ(0);
   }
 
@@ -319,8 +344,8 @@
    * Noel Delgado | @pixelia_me
    */
 
-  var items = []
-    , point = document.querySelector('svg').createSVGPoint();
+  var items = [],
+    point = document.querySelector("svg").createSVGPoint();
 
   function getCoordinates(e, svg) {
     point.x = e.clientX;
@@ -336,14 +361,14 @@
     Object.keys(config).forEach(function (item) {
       this[item] = config[item];
     }, this);
-    this.el.addEventListener('mousemove', this.mouseMoveHandler.bind(this));
-    this.el.addEventListener('touchmove', this.touchMoveHandler.bind(this));
+    this.el.addEventListener("mousemove", this.mouseMoveHandler.bind(this));
+    this.el.addEventListener("touchmove", this.touchMoveHandler.bind(this));
   }
 
   Item.prototype = {
     update: function update(c) {
-      this.clip.setAttribute('cx', c.x);
-      this.clip.setAttribute('cy', c.y);
+      this.clip.setAttribute("cx", c.x);
+      this.clip.setAttribute("cy", c.y);
     },
     mouseMoveHandler: function mouseMoveHandler(e) {
       this.update(getCoordinates(e, this.svg));
@@ -352,18 +377,24 @@
       e.preventDefault();
       var touch = e.targetTouches[0];
       if (touch) return this.update(getCoordinates(touch, this.svg));
-    }
+    },
   };
 
-  [].slice.call(document.querySelectorAll('.item'), 0).forEach(function (item, index) {
-    items.push(new Item({
-      el: item,
-      svg: item.querySelector('svg'),
-      clip: document.querySelector('#clip-' + index + ' circle'),
-    }));
-  });
+  [].slice
+    .call(document.querySelectorAll(".item"), 0)
+    .forEach(function (item, index) {
+      items.push(
+        new Item({
+          el: item,
+          svg: item.querySelector("svg"),
+          clip: document.querySelector("#clip-" + index + " circle"),
+        })
+      );
+    });
 
-  [].slice.call(document.querySelectorAll('button'), 0).forEach(function (button) {
-    button.addEventListener('click', changeColor);
-  });
+  [].slice
+    .call(document.querySelectorAll("button"), 0)
+    .forEach(function (button) {
+      button.addEventListener("click", changeColor);
+    });
 </script>
