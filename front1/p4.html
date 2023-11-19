@@ -11,9 +11,9 @@
         <br>
         <br>- 우클릭으로 자르기
         <br>
+        <br>- 좌클릭으로 찢기
         <br>
-    <div class="center">
-        <a href="">reload</a>
+        <a href=""onClick="window.location.reload()">-새로고침</a>
     </div>
     <br>
     </p>
@@ -26,16 +26,15 @@
         return false;
     };
 
-    // settings
 
     var physics_accuracy = 3,
         mouse_influence = 15,
-        mouse_cut = 5,
-        gravity = 650,
+        mouse_cut = 8,
+        gravity = 600,
         cloth_height = 40,
         cloth_width = 70,
         start_y = 20,
-        spacing = 7,
+        spacing = 8,
         tear_distance = 60;
 
 

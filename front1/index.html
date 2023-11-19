@@ -8,37 +8,14 @@
     <div style="display: flex">
       <a data-url="./p1.html">
         <div class="item">
-          <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+          <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 300 200">
             <defs>
               <clipPath id="clip-0">
                 <circle cx="0" cy="0" fill="#000" r="150px"></circle>
               </clipPath>
             </defs>
-            <text class="svg-text" dy=".3em" x="50%" y="50%">30000px</text>
-            <g clip-path="url(#clip-0)">
-              <image
-                height="100%"
-                preserveAspectRatio="xMinYMin slice"
-                width="100%"
-                xlink:href="./30000.png"
-              ></image>
-              <text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-                30000px
-              </text>
-            </g>
-          </svg>
-        </div>
-      </a>
-      <a data-url="./p2.html">
-        <div class="item">
-          <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 300 200">
-            <defs>
-              <clipPath id="clip-1">
-                <circle cx="0" cy="0" fill="#000" r="150px"></circle>
-              </clipPath>
-            </defs>
             <text class="svg-text" dy=".3em" x="50%" y="50%">particle</text>
-            <g clip-path="url(#clip-1)">
+            <g clip-path="url(#clip-0)">
               <image
                 height="100%"
                 preserveAspectRatio="xMinYMin meet"
@@ -52,16 +29,16 @@
           </svg>
         </div>
       </a>
-      <a data-url="./p5.html">
+      <a data-url="./p2.html">
         <div class="item">
           <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
             <defs>
-              <clipPath id="clip-2">
+              <clipPath id="clip-1">
                 <circle cx="0" cy="0" fill="#000" r="150px"></circle>
               </clipPath>
             </defs>
             <text class="svg-text" dy=".3em" x="50%" y="50%">story</text>
-            <g clip-path="url(#clip-2)">
+            <g clip-path="url(#clip-1)">
               <image
                 height="100%"
                 preserveAspectRatio="xMinYMin slice"
@@ -75,7 +52,30 @@
           </svg>
         </div>
       </a>
-      <a data-url="./p7.html">
+      <a data-url="./p3.html">
+        <div class="item">
+          <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
+            <defs>
+              <clipPath id="clip-2">
+                <circle cx="0" cy="0" fill="#000" r="150px"></circle>
+              </clipPath>
+            </defs>
+            <text class="svg-text" dy=".3em" x="50%" y="50%">logo</text>
+            <g clip-path="url(#clip-2)">
+              <image
+                height="100%"
+                preserveAspectRatio="xMinYMin slice"
+                width="100%"
+                xlink:href="./nasa.jpg"
+              ></image>
+              <text class="svg-masked-text" dy=".3em" x="50%" y="50%">
+                nasa
+              </text>
+            </g>
+          </svg>
+        </div>
+      </a>
+      <a data-url="./p4.html">
         <div class="item">
           <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
             <defs>
@@ -83,31 +83,8 @@
                 <circle cx="0" cy="0" fill="#000" r="150px"></circle>
               </clipPath>
             </defs>
-            <text class="svg-text" dy=".3em" x="50%" y="50%">logo</text>
-            <g clip-path="url(#clip-3)">
-              <image
-                height="100%"
-                preserveAspectRatio="xMinYMin slice"
-                width="100%"
-                xlink:href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9473/i-angus.png"
-              ></image>
-              <text class="svg-masked-text" dy=".3em" x="50%" y="50%">
-                logo
-              </text>
-            </g>
-          </svg>
-        </div>
-      </a>
-      <a data-url="./p8.html">
-        <div class="item">
-          <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
-            <defs>
-              <clipPath id="clip-4">
-                <circle cx="0" cy="0" fill="#000" r="150px"></circle>
-              </clipPath>
-            </defs>
             <text class="svg-text" dy=".3em" x="50%" y="50%">cloth</text>
-            <g clip-path="url(#clip-4)">
+            <g clip-path="url(#clip-3)">
               <image
                 height="100%"
                 preserveAspectRatio="xMinYMin slice"
@@ -121,16 +98,16 @@
           </svg>
         </div>
       </a>
-      <a data-url="./p10.html">
+      <a data-url="./p5.html">
         <div class="item">
           <svg preserveAspectRatio="xMidYMid slice" viewBox="0 0 300 200">
             <defs>
-              <clipPath id="clip-5">
+              <clipPath id="clip-4">
                 <circle cx="0" cy="0" fill="#000" r="150px"></circle>
               </clipPath>
             </defs>
             <text class="svg-text" dy=".3em" x="50%" y="50%">word</text>
-            <g clip-path="url(#clip-5)">
+            <g clip-path="url(#clip-4)">
               <image
                 height="100%"
                 preserveAspectRatio="xMinYMin slice"
@@ -340,10 +317,6 @@
   }
 </style>
 <script>
-  /*
-   * Noel Delgado | @pixelia_me
-   */
-
   var items = [],
     point = document.querySelector("svg").createSVGPoint();
 
