@@ -32,7 +32,6 @@ function init() {
   canvas.addEventListener('mouseup',   mouseUp,   false);
   canvas.addEventListener('mouseout',  mouseUp,  false);  
   canvas.addEventListener('dblclick', doubleClick, false);
-  canvas.addEventListener('tplclick', tripleClick, false);
   
   window.onresize = function(event) {
     canvas.width = window.innerWidth;
@@ -106,9 +105,6 @@ function doubleClick( event ) {
   canvas.width = canvas.width; 
 }
 
-function tripleClick( event ) {
-
-}
 
 function textWidth( string, size ) {
   context.font = size + "px Nanum Pen Script";
